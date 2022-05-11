@@ -1,8 +1,12 @@
 import React from "react";
+import style from './Botao.module.scss'
 
-function Button() {
+function Button(props: any ) {
   return (
-    <button>clicar</button>
+    <button
+      className={style.botao}
+    >
+      {props.children}</button>
   );
 }
 
